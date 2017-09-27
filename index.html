@@ -176,6 +176,13 @@
   </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.min.js"></script>
-  <script type="text/javascript" src="./_script.js"></script>
+  <script type="text/javascript">
+    new Vue({
+      el: '.v__register',
+      data: {
+        showRegisterOverlay: false
+      }
+    });
+  </script>
 </body>
 </html>
