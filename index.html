@@ -1,68 +1,182 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <title>POCC</title>
-  <style type="text/css">
-    .bottom {
-      background: #C492B1;
-      width: 100%;
-      height: 5000px;
-      z-index: 100;
-    }
-
-    .top {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #BCE7FD;
-      width: 100%;
-      height: 5000px;
-      z-index: 999;
-    }
-
-    .hide {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="https://s3.bukalapak.com/ast/mweb-7084d4d886596d1f2b2590f4898615af021f85cdf53ebe5660721f0297434cb1.css">
 </head>
 <body>
-  <div>
-    <div class="bottom">
-      <button class="js-show-it">Show it!</button>
-      <br />
-      Iceland kitsch narwhal veniam vice, helvetica plaid four loko. Hella nisi sint, snackwave tumblr occaecat pop-up bicycle rights sustainable ut. Consequat fixie eiusmod cray palo santo truffaut portland, chambray tacos venmo pork belly keffiyeh ut lorem. Chicharrones pork belly vaporware brooklyn deep v in quinoa gentrify. Deserunt narwhal fingerstache, brunch kombucha fam try-hard readymade fugiat. Asymmetrical occaecat celiac venmo ut umami DIY quinoa, art party cloud bread. Man bun cupidatat adipisicing photo booth. Palo santo narwhal shabby chic, prism fanny pack excepteur small batch ut chillwave. Cardigan nisi mixtape you probably haven't heard of them lorem iPhone cronut. Ullamco pitchfork mixtape post-ironic before they sold out voluptate. Flannel deep v 3 wolf moon drinking vinegar blue bottle actually pariatur reprehenderit nisi food truck shaman.
-      <br /><br />
-      Normcore deep v labore glossier banjo +1 artisan shabby chic in. Adipisicing cloud bread whatever readymade palo santo shaman. Hoodie excepteur kinfolk narwhal blue bottle do tattooed post-ironic kogi crucifix echo park blog four dollar toast 8-bit aute. Tumeric seitan humblebrag retro messenger bag, leggings tote bag unicorn pork belly DIY portland selvage green juice XOXO est. Literally ullamco sriracha before they sold out stumptown letterpress PBR&B. Yr jianbing reprehenderit eiusmod fanny pack pug bushwick iPhone officia coloring book helvetica mollit. Kinfolk kitsch affogato, viral chia mustache asymmetrical. Beard cronut etsy bespoke dolor cillum swag. Eu palo santo ugh tattooed williamsburg live-edge salvia small batch flexitarian VHS vape shoreditch 3 wolf moon. Ennui mlkshk affogato master cleanse post-ironic. Deserunt narwhal messenger bag tbh.
+  <div class='c-application-wrapper v__register'>
+    <div class='c-header c-header--red c-header--fixed'>
+      <div class='c-header__action'>
+        <button class='c-header__action__btn'>
+          <span class='c-icon c-icon--arrow-backward'></span>
+        </button>
+      </div>
+      <div class='c-header__title c-header__title--text'>
+        Keuntungan Mendaftar
+      </div>
+    </div>
+    <div class='c-application-content register-wrapper u-margin-bottom--tiny'>
+      <div class='c-register-slider'>
+        <div class='c-register-slider__item'>
+          <img src='https://s4.bukalapak.com/images/mobile/illustrations/ill-simpan-alamat@2x.png'>
+          <div class='c-register-slider__text'>
+            <h2>Transaksi lebih cepat</h2>
+            <p>Kamu cukup menyimpan alamat pengiriman sekali saja untuk mempercepat transaksi berikutnya.</p>
+          </div>
+        </div>
+        <div class='c-register-slider__item'>
+          <img src='https://s1.bukalapak.com/images/mobile/illustrations/ill-voucher-belanja@2x.png'>
+          <div class='c-register-slider__text'>
+            <h2>Belanja Lebih Murah</h2>
+            <p>Rasakan murahnya berbelanja dengan menggunakan voucher belanja.</p>
+          </div>
+        </div>
+      </div>
+      <div class='c-slider-dots'></div>
+      <a v-on:click='showRegisterOverlay = true' class='u-txt--responsive c-btn c-btn--block c-btn--red c-btn--large u-margin-top--huge'>Daftar dengan E-mail atau No. HP</a>
+      <div class='u-backline u-txt--small u-text-center u-margin-top--small u-margin-bottom--medium'>
+        <span class='u-backline__text'>
+          atau daftar dengan
+        </span>
+      </div>
+      <div class='o-layout'>
+        <div class='o-layout__item u-2of4'>
+          <a class='c-btn c-btn--large c-btn--block' href='#'>
+            <span class='c-socmed-login__icon c-socmed-login__icon--facebook'></span>
+            Facebook
+          </a>
+        </div>
+        <div class='o-layout__item u-2of4'>
+          <a class='c-btn c-btn--block c-btn--large js-gplus-button' href='#'>
+            <span class='c-socmed-login__icon c-socmed-login__icon--google'></span>
+            Google
+          </a>
+        </div>
+      </div>
+      <p class='u-text-center u-margin-top--large u-margin-bottom--huge u-fg--ash-dark'>
+        Sudah punya akun?
+        <a href='#'>Login di sini</a>
+      </p>
     </div>
 
-    <div class="top hide">
-      Iceland kitsch narwhal veniam vice, helvetica plaid four loko. Hella nisi sint, snackwave tumblr occaecat pop-up bicycle rights sustainable ut. Consequat fixie eiusmod cray palo santo truffaut portland, chambray tacos venmo pork belly keffiyeh ut lorem. Chicharrones pork belly vaporware brooklyn deep v in quinoa gentrify. Deserunt narwhal fingerstache, brunch kombucha fam try-hard readymade fugiat. Asymmetrical occaecat celiac venmo ut umami DIY quinoa, art party cloud bread. Man bun cupidatat adipisicing photo booth. Palo santo narwhal shabby chic, prism fanny pack excepteur small batch ut chillwave. Cardigan nisi mixtape you probably haven't heard of them lorem iPhone cronut. Ullamco pitchfork mixtape post-ironic before they sold out voluptate. Flannel deep v 3 wolf moon drinking vinegar blue bottle actually pariatur reprehenderit nisi food truck shaman.
-      <br /><br />
-      Normcore deep v labore glossier banjo +1 artisan shabby chic in. Adipisicing cloud bread whatever readymade palo santo shaman. Hoodie excepteur kinfolk narwhal blue bottle do tattooed post-ironic kogi crucifix echo park blog four dollar toast 8-bit aute. Tumeric seitan humblebrag retro messenger bag, leggings tote bag unicorn pork belly DIY portland selvage green juice XOXO est. Literally ullamco sriracha before they sold out stumptown letterpress PBR&B. Yr jianbing reprehenderit eiusmod fanny pack pug bushwick iPhone officia coloring book helvetica mollit. Kinfolk kitsch affogato, viral chia mustache asymmetrical. Beard cronut etsy bespoke dolor cillum swag. Eu palo santo ugh tattooed williamsburg live-edge salvia small batch flexitarian VHS vape shoreditch 3 wolf moon. Ennui mlkshk affogato master cleanse post-ironic. Deserunt narwhal messenger bag tbh.
-      <br /><br />
-      Glossier consectetur literally fugiat tattooed tbh vice vegan poke pour-over. Bicycle rights butcher narwhal waistcoat portland cliche labore slow-carb tote bag deep v. Whatever ipsum air plant prism pariatur sint, non sunt. 90's esse waistcoat taiyaki, kitsch fam velit cliche dolore aliqua chia before they sold out vinyl listicle nisi. Culpa enim vinyl paleo. Elit whatever shoreditch hell of normcore ex reprehenderit scenester helvetica retro et tacos. Stumptown green juice schlitz, neutra knausgaard live-edge la croix hexagon. Qui actually blog salvia disrupt hoodie. Distillery shabby chic single-origin coffee offal, live-edge blue bottle reprehenderit occaecat iceland enamel pin hexagon aute brunch hoodie. Voluptate laboris in, enamel pin shabby chic dreamcatcher heirloom duis four loko subway tile minim forage helvetica chillwave. Consectetur +1 organic lomo tumeric cardigan occaecat williamsburg marfa YOLO occupy. Microdosing in qui aute, single-origin coffee ea retro coloring book palo santo.
-      <br /><br />
-      Hella waistcoat eiusmod laboris adaptogen. Lo-fi art party roof party, gastropub tofu next level butcher listicle pork belly affogato hammock pok pok. Forage chartreuse quis migas fashion axe. Ut aesthetic sint, VHS retro brooklyn voluptate deep v yuccie bushwick put a bird on it pabst. Succulents roof party elit hot chicken, fingerstache laboris quinoa listicle enim you probably haven't heard of them paleo kogi scenester williamsburg. Irony austin fashion axe neutra, cardigan next level sed cred ex non normcore affogato. Fam lo-fi id tote bag irony cardigan la croix unicorn messenger bag succulents ugh lomo. Minim kinfolk irony commodo, snackwave knausgaard cray id fashion axe you probably haven't heard of them palo santo hoodie. In biodiesel tattooed dolor umami mollit vinyl minim heirloom XOXO brooklyn ramps yr occupy cardigan. Culpa squid consequat occupy williamsburg, typewriter cliche direct trade. Vaporware lomo single-origin coffee, try-hard bushwick chartreuse subway tile qui hexagon non ut nostrud deserunt tacos venmo.
-      <br /><br />
-      Venmo XOXO cornhole copper mug magna direct trade tousled waistcoat pok pok bespoke adaptogen occupy. Mixtape selvage food truck sed lyft laboris mollit raclette artisan. Coloring book mumblecore normcore hashtag pok pok 90's locavore celiac ugh voluptate ut helvetica tbh. Polaroid quis yuccie, glossier chambray yr helvetica beard fanny pack wayfarers. Pour-over dolore officia adaptogen shoreditch deep v etsy esse vaporware. In ut tbh artisan 90's fugiat irure wolf slow-carb lo-fi godard af hot chicken gastropub dolore. Cupidatat dolore nisi, aute pork belly hexagon hoodie etsy church-key ipsum waistcoat fashion axe. Sunt normcore commodo nisi offal, cillum nulla la croix banh mi fingerstache gluten-free before they sold out fixie vinyl prism. Messenger bag ipsum labore, aliqua kickstarter dreamcatcher activated charcoal godard duis shabby chic excepteur biodiesel hella cliche. Af lorem aliqua salvia ullamco leggings selvage cillum brooklyn. Vexillologist godard mumblecore, pickled intelligentsia dolore biodiesel hot chicken fugiat. Man braid aesthetic four dollar toast, kogi tumeric swag gastropub. Hashtag franzen ad shoreditch in woke consequat umami la croix knausgaard incididunt flexitarian. Live-edge quinoa austin single-origin coffee slow-carb ex cornhole incididunt umami cold-pressed exercitation.
-      <br /><br />
-      <button class='js-close-it'>Close it</button>
+    <div v-show='showRegisterOverlay'>
+      <div class='c-overlay-scr c-overlay-scr--bottom is-active'>
+        <div class='c-overlay-scr__header'>
+          <div class='c-overlay-scr__title'>Daftar</div>
+
+          <div class='c-overlay-scr__action'>
+            <button class='btn-close btn-icon' v-on:click='showRegisterOverlay: false'>
+              <span class='c-icon c-icon--close'></span>
+            </button>
+          </div>
+        </div>
+
+        <div class='c-overlay-scr__content'>
+          <div class='c-overlay-scr__content__inner'>
+            <div class='c-application-content register-wrapper u-margin-top--huge u-margin-bottom--huge'>
+              <form action='#' class='new_user' id='new_user' method='post'>
+                <input name='utf8' type='hidden' value='✓'>
+                <fieldset>
+                  <div class='c-field'>
+                    <div class='c-field__label-row'>
+                      <label class='c-input-label c-input-label--large'>Nama Lengkap</label>
+                    </div>
+                    <input class='c-input-text c-input c-input--large' id='user_name' name='user[name]' type='text'>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class='c-field'>
+                    <div class='c-field__label-row'>
+                      <label class='c-input-label c-input-label--large'>E-mail atau Nomor Handphone</label>
+                    </div>
+                    <input autocomplete='off' class='c-input-text c-input c-input--large' id='user_email' name='user[email_or_phone]' type='text'>
+                  </div>
+                  <input id='referrer_token' name='referrer_token' type='hidden'>
+                  <input id='phone_registration_active' name='phone_registration_active' type='hidden' value='true'>
+                  <input id='referrer_page' name='referrer_page' type='hidden'>
+                  <input id='event_trigger' name='event_trigger' type='hidden'>
+                </fieldset>
+                <div class='u-margin-bottom--large'>
+                  <div class='c-input-wrapper'>
+                    <label class='c-input-label'>
+                      <input checked='checked' class='c-input-radio' id='user_gender_laki-laki' name='user[gender]' type='radio' value='Laki-laki'>
+                      <span class='c-input__inner-label'>Laki-laki</span>
+                    </label>
+                  </div>
+                  <div class='c-input-wrapper'>
+                    <label class='c-input-label'>
+                      <input class='c-input-radio' id='user_gender_perempuan' name='user[gender]' type='radio' value='Perempuan'>
+                      <span class='c-input__inner-label'>Perempuan</span>
+                    </label>
+                  </div>
+                </div>
+                <fieldset>
+                  <div class='c-field'>
+                    <div class='c-field__label-row'>
+                      <label class='c-input-label c-input-label--large'>Username (tidak dapat diubah)</label>
+                    </div>
+                    <div class='c-input-grp-table c-input-grp-icon--right'>
+                      <div class='c-input__ctx c-input__ctx--large'>bukalapak.com/</div>
+                      <input autocomplete='off' class='c-input-text c-input--large' id='user_username' name='user[username]' type='text'>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class='c-field'>
+                    <div class='c-field__label-row'>
+                      <label class='c-input-label c-input-label--large'>Password Bukalapak</label>
+                    </div>
+                    <div class='c-input-grp-icon c-input-grp-icon--right'>
+                      <input class='c-input-text c-input c-input--large' id='user_password' name='user[password]' type='password'>
+                      <i class='c-input__icon c-input-grp-icon--right__icon c-m-icon c-m-icon--visibility u-fg--ash'></i>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class='c-field'>
+                    <div class='c-field__label-row'>
+                      <label class='c-input-label c-input-label--large'>Kode Referral</label>
+                    </div>
+                    <input id='user_user_referrer_code' name='user[user_referrer_code]' type='hidden'>
+                    <input class='c-input-text c-input c-input--large' name='user[user_referrer_code]' type='text'>
+                    <div class='c-field__hint js-user-referral-code-hint'>Masukkan kode Referral jika ada untuk mendapatkan Rewards (tidak wajib diisi)</div>
+                    <div class='c-field__hint u-hidden js-user-referral-code-success'>
+                      Kamu telah diajak oleh<span class='u-txt--bolder js-user-referral-code-success-name' style='text-transform: capitalize;'>
+                        Bukalapak
+                      </span>.
+                    </div>
+                  </div>
+                </fieldset>
+
+                <input name='user[policy]' type='hidden' value='1'>
+                <input name='user[password_confirmation]' type='hidden'>
+                <p class='u-margin-top--small u-margin-bottom--small u-fg--ash-dark'>
+                  Dengan menekan Daftar, Saya menyetujui
+                  <a href='/terms'>Aturan penggunaan</a>
+                  Bukalapak.com
+                </p>
+                <div>
+                  <input class='c-btn c-btn--block c-btn--red c-btn--large' id='new-registration' name='commit' type='submit' value='Daftar' />
+                </div>
+                <p class='u-text-center u-margin-top--large u-fg--ash-dark'>
+                  Sudah punya akun?
+                  <a href='https://www.bukalapak.com/login?comeback=%2Fregister&amp;direct=1'>Login di sini</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
 
   </div>
 
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-
-  <script type="text/javascript">
-    $('.js-show-it').click(function(e) {
-      $('.top').removeClass('hide').show();
-    })
-    $('.js-close-it').click(function(e) {
-      $('.top').hide();
-    })
-  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.min.js"></script>
+  <script type="text/javascript" src="./_overlay.js"></script>
+  <script type="text/javascript" src="./_script.js"></script>
 </body>
 </html>
